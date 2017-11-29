@@ -10,7 +10,21 @@
     <body>
       <div id="react-container"></div>
       <script type="text/babel">
-        
+        var Note = React.createClass({
+          render() {
+            return (
+              <div className="note">
+                <p></p>
+                <span>
+                  <button>Edit</button>
+                  <button>X</button>
+                </span>
+              </div>
+            )
+          }
+        })
+        ReactDOM.render(<Note></Note>, 
+          document.getElementById("react-container"))
       </script>
     </body>
 </html>
