@@ -18,7 +18,11 @@
           }
         })
 
-        ReactDOM.render(<MyComponent text="Hello World"/>,
+        ReactDOM.render(<div>
+            <MyComponent text="Hello World"/>
+            <MyComponent text="I am a Component"/>
+            <MyComponent text="I have been reused!"/>
+          </div>,
           document.getElementById('react-container'))
       </script>
 
