@@ -1,6 +1,10 @@
-const { render } = ReactDOM
+import React from 'react'
+import { render } from 'react-dom'
+import { CodingDayCount } from './components/CodingDayCount'
+
+window.React = React
 
 render(
-  <h1 id="title" className="header" style={{backgroundColor: 'red', color: 'white', fontFamily: 'verdana'}}>Hello World</h1>,
+  <CodingDayCount />,
   document.getElementById('react-container')
 )
